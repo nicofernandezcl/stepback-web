@@ -1,0 +1,124 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Introducción a React",
+      "slug": "introduccion-a-react",
+      "excerpt": "React es una biblioteca de JavaScript para construir interfaces de usuario. Aprende cómo empezar con React.",
+      "content": "React es una biblioteca de JavaScript para construir interfaces de usuario. Es utilizada por empresas como Facebook, Instagram, y WhatsApp. Para empezar con React, necesitas tener conocimientos básicos de JavaScript, HTML y CSS. En este post, aprenderemos cómo configurar un proyecto en React y los conceptos fundamentales que debes conocer.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 2,
+      "title": "¿Qué es JSX?",
+      "slug": "que-es-jsx",
+      "excerpt": "JSX es una extensión de sintaxis para JavaScript que se usa con React. Te permite escribir HTML en tus archivos JavaScript.",
+      "content": "JSX es una extensión de sintaxis para JavaScript. Es utilizado en React para describir cómo debería lucir la UI. En lugar de usar funciones tradicionales de JavaScript, puedes escribir un código similar a HTML dentro de tus componentes. En este artículo, vamos a explorar qué es JSX y cómo usarlo en React.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 3,
+      "title": "Componentes Funcionales vs Componentes de Clase",
+      "slug": "componentes-funcionales-vs-clase",
+      "excerpt": "Explora las diferencias entre componentes funcionales y componentes de clase en React.",
+      "content": "En React, puedes crear componentes de dos maneras: usando componentes de clase o componentes funcionales. Los componentes de clase son los componentes tradicionales en React, pero los componentes funcionales, que son más simples, se han vuelto más populares con la llegada de los hooks. Vamos a comparar ambos tipos y discutir cuándo usar cada uno.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 4,
+      "title": "Usando Hooks en React",
+      "slug": "usando-hooks-en-react",
+      "excerpt": "Los hooks de React permiten usar estado y otras características sin escribir una clase.",
+      "content": "Con los hooks, puedes usar el estado en componentes funcionales, lo cual era solo posible anteriormente en componentes de clase. En este artículo, exploraremos los hooks más comunes en React, como useState, useEffect y useContext.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 5,
+      "title": "Manejo de Formularios en React",
+      "slug": "manejo-de-formularios-en-react",
+      "excerpt": "Aprende cómo manejar formularios en React, desde el input de datos hasta la validación.",
+      "content": "En este post, veremos cómo manejar formularios en React. Aprenderás a crear formularios controlados, validar inputs y manejar envíos de formularios de manera eficiente.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 6,
+      "title": "Rutas en React con React Router",
+      "slug": "rutas-en-react-con-react-router",
+      "excerpt": "React Router es una biblioteca estándar para gestionar la navegación en aplicaciones React.",
+      "content": "En este artículo, aprenderemos cómo configurar rutas en una aplicación React utilizando React Router. Te enseñaré cómo crear rutas, navegar entre páginas y pasar parámetros.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 7,
+      "title": "Estilización en React con CSS Modules",
+      "slug": "estilizacion-en-react-con-css-modules",
+      "excerpt": "Descubre cómo usar CSS Modules en React para manejar el estilo de componentes de forma modular y segura.",
+      "content": "CSS Modules te permite escribir estilos CSS a nivel de componente, lo que evita conflictos de nombres globales. En este post, veremos cómo usar CSS Modules en una aplicación React.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 8,
+      "title": "Consumiendo APIs en React con Fetch",
+      "slug": "consumiendo-apis-en-react-con-fetch",
+      "excerpt": "Aprende a consumir APIs en React usando la función fetch y manejar las respuestas en tus componentes.",
+      "content": "En este artículo, exploraremos cómo consumir APIs en React utilizando la función fetch. Aprenderemos a hacer solicitudes GET, POST, y manejar errores.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 9,
+      "title": "Optimización de Rendimiento en React",
+      "slug": "optimizacion-de-rendimiento-en-react",
+      "excerpt": "Mejora el rendimiento de tus aplicaciones React con técnicas y mejores prácticas.",
+      "content": "En este artículo, te mostraré cómo mejorar el rendimiento de tus aplicaciones React. Hablaremos de técnicas como memoization, lazy loading, y la optimización de renderizados.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 10,
+      "title": "Usando Redux en React",
+      "slug": "usando-redux-en-react",
+      "excerpt": "Redux es una biblioteca de gestión de estado predecible. Aprende cómo integrarla en tus aplicaciones React.",
+      "content": "Redux es muy útil para aplicaciones con estados complejos. En este post, aprenderás a usar Redux en tus aplicaciones React, desde la creación de un store hasta la gestión del estado global.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 11,
+      "title": "Pruebas en React con Jest",
+      "slug": "pruebas-en-react-con-jest",
+      "excerpt": "Jest es una de las herramientas más populares para pruebas en React. Aprende cómo escribir pruebas unitarias para tus componentes.",
+      "content": "En este artículo, veremos cómo escribir pruebas unitarias para tus componentes React usando Jest. Veremos cómo hacer mock de funciones y simular interacciones de usuario.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 12,
+      "title": "Despliegue de Aplicaciones React en Netlify",
+      "slug": "despliegue-de-aplicaciones-react-en-netlify",
+      "excerpt": "Netlify es una plataforma de despliegue fácil de usar para aplicaciones React. Aprende a desplegar tu app en Netlify.",
+      "content": "En este post, te mostraré cómo desplegar tu aplicación React en Netlify. Aprenderás cómo conectar tu repositorio de GitHub y automatizar el proceso de despliegue.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 13,
+      "title": "Creando una SPA con React",
+      "slug": "creando-una-spa-con-react",
+      "excerpt": "Las aplicaciones de una sola página (SPA) son populares gracias a React. Aprende a crear una SPA con React.",
+      "content": "En este artículo, veremos cómo crear una SPA utilizando React. Te enseñaré cómo gestionar el enrutamiento y los estados en una aplicación de una sola página.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 14,
+      "title": "React y TypeScript: Uniendo fuerzas",
+      "slug": "react-y-typescript",
+      "excerpt": "TypeScript es una herramienta que mejora el desarrollo en React. Aprende a usar TypeScript con React.",
+      "content": "TypeScript te ayuda a detectar errores en tiempo de compilación y mejora la calidad del código. En este artículo, veremos cómo configurar un proyecto React con TypeScript y las mejores prácticas.",
+      "image": "https://via.placeholder.com/500x300"
+    },
+    {
+      "id": 15,
+      "title": "Mejores Prácticas de Código en React",
+      "slug": "mejores-practicas-de-codigo-en-react",
+      "excerpt": "Conoce las mejores prácticas de desarrollo de código para mantener tu proyecto React limpio y fácil de mantener.",
+      "content": "En este artículo, discutiremos algunas de las mejores prácticas al trabajar con React, desde el uso de componentes reutilizables hasta la organización de los archivos del proyecto.",
+      "image": "https://via.placeholder.com/500x300"
+    }
+  ]
+}

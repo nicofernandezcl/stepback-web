@@ -1,0 +1,12 @@
+[
+  {
+    "name": "about",
+    "title": "Sobre mi",
+    "content": "Este es el contenido de mi about."
+  },
+  {
+    "name": "contact",
+    "title": "Contacto",
+    "content": "Este es el contenido de mi contact."
+  }
+]

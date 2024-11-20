@@ -1,0 +1,15 @@
+{
+    "title": "Bienvenido a mi sitio personal",
+    "subtitle": "Ingeniero de Software, DJ, fotógrafo aficionado, tuerca ...",
+    "sections": [
+      {
+        "title": "Sobre mí",
+        "content": "Soy Nico, apasionado por la tecnología..."
+      },
+      {
+        "title": "Últimos proyectos",
+        "content": "Aquí algunos de mis proyectos destacados."
+      }
+    ]
+  }
+  
