@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { BlogPost } from "../types";
 
+const postsThreshold = 4;
+
 const Blog: React.FC = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [visiblePosts, setVisiblePosts] = useState<BlogPost[]>([]);
@@ -12,18 +14,23 @@ const Blog: React.FC = () => {
       .then((response) => response.json())
       .then((json) => {
         setPosts(json.posts);
-        setVisiblePosts(json.posts.slice(0, 3));
+        setVisiblePosts(json.posts.slice(0, postsThreshold));
+        setHasMore(json.posts.length > postsThreshold);
       })
       .catch((error) => console.error("Error loading blog.json:", error));
   }, []);
 
+  useEffect(() => {
+    console.log("Visible Posts:", visiblePosts);
+  }, [visiblePosts]);
+
   const loadMorePosts = useCallback(() => {
-    if (loading || !hasMore) return;
+    if (loading || visiblePosts.length == posts.length) return;
 
     setLoading(true);
 
     setTimeout(() => {
-      const nextPosts = posts.slice(visiblePosts.length, visiblePosts.length + 3);
+      const nextPosts = posts.slice(visiblePosts.length, visiblePosts.length + postsThreshold);
       setVisiblePosts((prev) => [...prev, ...nextPosts]);
 
       if (visiblePosts.length + nextPosts.length >= posts.length) {
@@ -32,18 +39,15 @@ const Blog: React.FC = () => {
 
       setLoading(false);
     }, 500);
-  }, [loading, hasMore, visiblePosts, posts]);
+    
+  }, [loading, posts, visiblePosts]);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (
-        window.innerHeight + document.documentElement.scrollTop ===
-        document.documentElement.offsetHeight
-      ) {
+      if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
         loadMorePosts();
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [loadMorePosts]);
