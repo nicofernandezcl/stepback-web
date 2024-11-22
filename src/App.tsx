@@ -30,6 +30,9 @@ function App() {
             <Route path="/:page" element={<Page />} />
           </Routes>
         </main>
+        <footer className="footer">
+          <p>Powered by stepback by Pulse</p>
+      </footer>
       </div>
     </Router>
   );
