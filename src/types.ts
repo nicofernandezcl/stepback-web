@@ -1,11 +1,16 @@
-// Representa una página del CMS
 export interface PageContent {
   name: string;
+  title: string;
+  subtitle?: string;
+  content?: string;
+  sections: PageSection[];
+}
+
+export interface PageSection {
   title: string;
   content: string;
 }
 
-// Representa una publicación de blog
 export interface BlogPost {
   id: string;
   title: string;
@@ -14,9 +19,4 @@ export interface BlogPost {
   date: string;
   image?: string;
   slug: string;
-}
-
-export interface PageSection {
-    title: string;
-    content: string;
 }

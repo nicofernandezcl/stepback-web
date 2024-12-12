@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { PageContent } from "../types";
 
 const Home: React.FC = () => {
-  const [data, setData] = useState<{ title: string; subtitle: string } | null>(null);
+  const [data, setData] = useState<PageContent | null>(null);
 
   useEffect(() => {
     fetch("/data/home.json")

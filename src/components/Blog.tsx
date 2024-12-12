@@ -30,7 +30,10 @@ const Blog: React.FC = () => {
     setLoading(true);
 
     setTimeout(() => {
-      const nextPosts = posts.slice(visiblePosts.length, visiblePosts.length + postsThreshold);
+      const nextPosts = posts.slice(
+        visiblePosts.length,
+        visiblePosts.length + postsThreshold,
+      );
       setVisiblePosts((prev) => [...prev, ...nextPosts]);
 
       if (visiblePosts.length + nextPosts.length >= posts.length) {
@@ -39,12 +42,14 @@ const Blog: React.FC = () => {
 
       setLoading(false);
     }, 500);
-    
   }, [loading, posts, visiblePosts]);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
+      if (
+        window.innerHeight + document.documentElement.scrollTop ===
+        document.documentElement.offsetHeight
+      ) {
         loadMorePosts();
       }
     };

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { PageContent } from "../types";
 
-
-
 const Page: React.FC = () => {
   const { page } = useParams<{ page: string }>();
   const [data, setData] = useState<PageContent | null>(null);
@@ -12,7 +10,7 @@ const Page: React.FC = () => {
     fetch("/data/pages.json")
       .then((response) => response.json())
       .then((json: PageContent[]) => {
-        const pageData = json.find(p => p.name === page) || null;
+        const pageData = json.find((p) => p.name === page) || null;
         setData(pageData);
       })
       .catch((error) => console.error("Error loading page.json:", error));

@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: #1A1A19; /* Fondo oscuro principal */
-  color: #F6FCDF; /* Texto principal en color claro */
+  background-color: #1a1a19; /* Fondo oscuro principal */
+  color: #f6fcdf; /* Texto principal en color claro */
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
   font-family: "Arial", sans-serif;
   font-size: calc(10px + 2vmin);
   padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .App-logo {
@@ -24,7 +25,7 @@
 }
 
 .App-header {
-  background-color: #31511E;
+  background-color: #31511e;
   padding: 20px 0;
   position: fixed;
   top: 0;
@@ -55,7 +56,7 @@ nav li {
 }
 
 nav a {
-  color: #F6FCDF;
+  color: #f6fcdf;
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: bold;
@@ -65,8 +66,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #859F3D;
-  color: #1A1A19;
+  background-color: #859f3d;
+  color: #1a1a19;
   text-decoration: underline;
 }
 
@@ -83,7 +84,7 @@ nav a:hover {
 }
 
 .App-link {
-  color: #859F3D;
+  color: #859f3d;
   text-decoration: none;
   font-weight: bold;
   margin-top: 15px;
@@ -91,7 +92,7 @@ nav a:hover {
 }
 
 .App-link:hover {
-  color: #F6FCDF;
+  color: #f6fcdf;
 }
 
 @keyframes App-logo-spin {
@@ -105,17 +106,19 @@ nav a:hover {
 
 body {
   margin: 0;
-  background-color: #1A1A19;
-  color: #F6FCDF;
+  background-color: #1a1a19;
+  color: #f6fcdf;
   font-family: "Arial", sans-serif;
 }
 
-h1, h2, h3 {
-  color: #F6FCDF;
+h1,
+h2,
+h3 {
+  color: #f6fcdf;
 }
 
 p {
-  color: #F6FCDF;
+  color: #f6fcdf;
   line-height: 1.6;
 }
 
@@ -140,8 +143,8 @@ p {
 }
 
 .blog-post {
-  background-color: #F6FCDF;
-  border: 1px solid #31511E;
+  background-color: #f6fcdf;
+  border: 1px solid #31511e;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -164,20 +167,20 @@ p {
 }
 
 .blog-post h2 {
-  color: #31511E;
+  color: #31511e;
   font-size: 1.6rem;
   margin-bottom: 15px;
 }
 
 .blog-post p {
   font-size: 1rem;
-  color: #1A1A19;
+  color: #1a1a19;
   line-height: 1.5;
   margin-bottom: 15px;
 }
 
 .blog-post a {
-  color: #859F3D;
+  color: #859f3d;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
@@ -186,8 +189,8 @@ p {
 }
 
 .blog-post a:hover {
-  color: #F6FCDF;
-  background-color: #31511E;
+  color: #f6fcdf;
+  background-color: #31511e;
   padding: 5px;
   border-radius: 5px;
 }
